@@ -1,6 +1,6 @@
-function foo(param: string): string {
+export function lower(param: string): string {
   console.log(param)
   return param.toLowerCase()
 }
 
-console.warn(foo("Test"))
+console.warn(lower("Test"))

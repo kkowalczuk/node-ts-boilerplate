@@ -7,12 +7,28 @@
     "clean": "rimraf dist/*",
     "compile": "tsc",
     "start": "yarn clean && yarn compile && node dist/App.js",
-    "test": "test"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "transform": {
+      "\\.(ts)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/?(*.)+(spec).ts"
+    ]
+  },
   "devDependencies": {
+    "@types/jest": "^23.3.0",
+    "jest": "^23.4.1",
     "rimraf": "^2.6.2",
-    "tslint": "^5.11.0"
+    "ts-jest": "^23.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.2"
   }
 }
