@@ -4,3 +4,4 @@ export function lower(param: string): string {
 }
 
 console.warn(lower("Test"))
+process.exit(0)
