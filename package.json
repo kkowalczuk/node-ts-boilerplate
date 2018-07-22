@@ -1,15 +1,15 @@
 {
-  "name": "1ts",
+  "name": "node-ts-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/App.js",
   "scripts": {
     "clean": "rimraf dist/*",
     "compile": "tsc",
     "start": "yarn clean && yarn compile && node dist/App.js",
     "test": "jest"
   },
-  "author": "",
+  "author": "Karol Kowalczuk",
   "license": "ISC",
   "jest": {
     "moduleFileExtensions": [
