@@ -1,8 +1,12 @@
 {
   "name": "node-ts-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "A boilerplate for node project with TypeScript enabled",
   "main": "dist/App.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kkowalczuk/node-ts-boilerplate.git"
+  },
   "scripts": {
     "clean": "rimraf dist/*",
     "compile": "tsc",
